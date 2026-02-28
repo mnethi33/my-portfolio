@@ -6,50 +6,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
-        body { background: #0a0f1a; color: #d1d5db; font-family: 'JetBrains Mono', monospace; }
-        .accent { color: #5fb9ff; }
-        .nav-link:hover { color: #fff; text-decoration: underline; }
-        .hero-border { border-left: 2px solid #1e293b; padding-left: 1.5rem; }
+        body { background: #070a13; color: #94a3b8; font-family: 'JetBrains Mono', monospace; }
+        .accent { color: #38bdf8; }
+        .white-text { color: #f1f5f9; }
+        .nav-link:hover { color: #38bdf8; }
+        .border-glow { border: 1px solid #1e293b; transition: border 0.3s; }
+        .border-glow:hover { border-color: #38bdf8; }
     </style>
 </head>
-<body class="max-w-4xl mx-auto p-8 md:p-16">
+<body class="max-w-3xl mx-auto p-6 md:p-16">
+
     <header class="mb-20">
-        <h1 class="text-4xl font-bold mb-4">Mukesh <span class="accent">Nethi</span></h1>
-        <nav class="flex gap-6 text-sm font-bold uppercase tracking-widest">
-            <a href="story.html" class="nav-link">Story</a>
-            <a href="projects.html" class="nav-link">Projects</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <h1 class="text-2xl font-bold mb-4 white-text">MUKESH <span class="accent">NETHI</span></h1>
+        <nav class="flex gap-6 text-[10px] uppercase tracking-[0.2em]">
+            <a href="story.html" class="nav-link">The Story</a>
+            <a href="projects.html" class="nav-link">The Lab</a>
+            <a href="blog.html" class="nav-link">Log</a>
+            <a href="mailto:nmukeshoff@gmail.com" class="nav-link">Signal</a>
         </nav>
     </header>
 
+    <section class="mb-16">
+        <h2 class="text-xs uppercase tracking-widest text-slate-600 mb-6">Core Philosophy</h2>
+        <p class="text-lg leading-relaxed mb-6 white-text">
+            I architect <span class="accent">intentional</span> digital ecosystems. 
+        </p>
+        <p class="mb-6">
+            My work is grounded in <strong>Niti</strong>—the principle of strategic conduct. I bridge the gap between complex cloud infrastructure and autonomous intelligence, specializing in model-agnostic AI platforms and multi-agent orchestration.
+        </p>
+    </section>
+
     <section class="mb-20">
-        <div class="hero-border">
-            <p class="text-xl leading-relaxed mb-6">
-                I am a <strong class="text-white">Senior AI Architect</strong> dedicated to building intentional digital ecosystems. From architecting organization-wide AI platforms at <span class="accent">OneMain Financial</span> to enabling agentic autonomy at <span class="accent">CVS</span>, my work bridges the gap between raw infrastructure and strategic intelligence.
-            </p>
-            <p class="text-slate-500 italic">"Strategy is not an accident; it is the manifestation of Niti."</p>
+        <h2 class="text-xs uppercase tracking-widest text-slate-600 mb-6">Active Research</h2>
+        <div class="grid gap-4">
+            <div class="border-glow p-6 rounded">
+                <h3 class="white-text font-bold mb-2">Multi-Agent Protocol (MAP)</h3>
+                <p class="text-sm">Standardizing how autonomous agents securely interact with sensitive data layers via MCP.</p>
+            </div>
+            <div class="border-glow p-6 rounded">
+                <h3 class="white-text font-bold mb-2">Sovereign Intelligence</h3>
+                <p class="text-sm">Researching local-first LLM orchestration to ensure 100% data privacy and system independence.</p>
+            </div>
         </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-        <div>
-            <h2 class="text-xs uppercase tracking-tighter text-slate-500 mb-4 font-bold">Latest Research</h2>
-            <h3 class="text-lg font-bold mb-2">The Multi-Agent MCP Bridge</h3>
-            <p class="text-sm text-slate-400 mb-4 text-justify">Architecting a standardized protocol for agents to securely interact with clinical and financial data across GCP and AWS.</p>
-            <a href="blog.html" class="accent text-xs font-bold underline">READ POST →</a>
-        </div>
-        <div>
-            <h2 class="text-xs uppercase tracking-tighter text-slate-500 mb-4 font-bold">Active Lab</h2>
-            <h3 class="text-lg font-bold mb-2">Project Niti-Core</h3>
-            <p class="text-sm text-slate-400 mb-4 text-justify">A local-first, privacy-sovereign LLM hub designed to automate personal workflows without data leakage.</p>
-            <a href="projects.html" class="accent text-xs font-bold underline">EXPLORE DOC →</a>
-        </div>
-    </section>
-
-    <footer class="pt-8 border-t border-slate-900 text-[10px] text-slate-600 flex justify-between">
-        <p>© 2026 MUKESH NETHI | MNETHI.COM</p>
-        <p class="uppercase tracking-widest">Powered by HTML & Intention</p>
+    <footer class="pt-8 border-t border-slate-900 text-[9px] uppercase tracking-widest flex justify-between">
+        <p>© 2026 MN | MNETHI.COM</p>
+        <p>Public Key: <span class="accent">63C7-EAC6-B3BF-88B1</span></p>
     </footer>
+
 </body>
 </html>
