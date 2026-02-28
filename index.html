@@ -3,63 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourName.NET | Systems Architect & Creator</title>
+    <title>mnethi.com | Mukesh Nethi - Systems & Strategy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: #e2e8f0; font-family: 'Courier New', monospace; }
-        .accent { color: #38bdf8; }
-        .card { background: #1e293b; border-radius: 8px; padding: 20px; border: 1px solid #334155; }
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
+        body { 
+            background-color: #0a0f1a; 
+            color: #d1d5db; 
+            font-family: 'JetBrains Mono', 'Courier New', monospace; 
+        }
+        .accent { color: #5fb9ff; }
+        .card { 
+            background: #111827; 
+            border: 1px solid #1f2937; 
+            border-radius: 4px; 
+            transition: all 0.3s ease;
+        }
+        .card:hover { border-color: #5fb9ff; }
+        hr { border-color: #1f2937; }
+        a:hover { text-decoration: underline; color: #fff; }
     </style>
 </head>
-<body class="max-w-4xl mx-auto p-6 md:p-12">
+<body class="max-w-3xl mx-auto p-8 md:p-16 leading-relaxed">
 
-    <header class="mb-12">
-        <h1 class="text-4xl font-bold mb-2">Welcome to <span class="accent">YourName.NET</span></h1>
-        <nav class="flex gap-4 text-sm accent">
-            <a href="#story">Story</a> • <a href="#blog">Blog</a> • <a href="#github">GitHub</a> • <a href="#contact">Contact</a>
+    <header class="mb-16">
+        <h1 class="text-3xl font-bold mb-4">Welcome to <span class="accent">mnethi.com</span></h1>
+        <nav class="flex gap-4 text-sm font-bold accent">
+            <a href="#story">Story</a> • 
+            <a href="https://github.com/mnethi33" target="_blank">Github</a> • 
+            <a href="https://linkedin.com/in/mukesh-nethi" target="_blank">LinkedIn</a> • 
+            <a href="mailto:nmukeshoff@gmail.com">Contact</a>
         </nav>
     </header>
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-4 border-b border-slate-700 pb-2">Greetings!</h2>
-        <p class="leading-relaxed mb-4">
-            I'm <strong>[Your Name]</strong>, known online as <strong>[Your Persona]</strong>. 
-            I am a [Your Profession] focused on [Your Main Interest]. With over [X] years in tech, 
-            I specialize in reducing complexity and building systems that last.
+    <section id="story" class="mb-16">
+        <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-slate-500">Greetings!</h2>
+        <p class="mb-4">
+            My name is <strong class="text-white">Mukesh Nethi</strong>. 
         </p>
-        <p class="text-slate-400 italic">
-            "My goal is to build systems that outlive me."
+        <p class="mb-6">
+            In my heritage, the name <em>Nethi</em> stems from the Sanskrit word <em>Niti</em>—meaning strategy, conduct, and intention. I carry this philosophy into my work as a software engineer. To me, code is not just syntax; it is a strategic architecture designed with clear intention.
+        </p>
+        <p class="italic text-slate-400 border-l-2 border-sky-900 pl-4">
+            "I build systems that bridge the gap between complex infrastructure and human-centric automation."
         </p>
     </section>
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-6 border-b border-slate-700 pb-2">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section class="mb-16">
+        <h2 class="text-xl font-bold mb-8 uppercase tracking-widest text-slate-500">The Stack</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
             <div>
-                <h3 class="accent font-bold">Software</h3>
-                <p>Python, Go, Rust, TypeScript, Bash</p>
+                <h3 class="accent font-bold mb-2">Development</h3>
+                <p class="text-sm">Python, JavaScript, TypeScript, Node.js</p>
             </div>
             <div>
-                <h3 class="accent font-bold">Operations</h3>
-                <p>Docker, Kubernetes, AWS, Linux (Debian/Arch)</p>
+                <h3 class="accent font-bold mb-2">Operations</h3>
+                <p class="text-sm">Linux (Debian), Docker, CloudOps, Git</p>
+            </div>
+            <div>
+                <h3 class="accent font-bold mb-2">Systems</h3>
+                <p class="text-sm">Automation Pipelines, Intelligent Systems, API Design</p>
+            </div>
+            <div>
+                <h3 class="accent font-bold mb-2">Philosophy</h3>
+                <p class="text-sm">Local-First, Privacy-Focused, Strategic Design</p>
             </div>
         </div>
     </section>
 
-    <section class="mb-12">
-        <h2 class="text-2xl font-semibold mb-6 border-b border-slate-700 pb-2">Featured Projects</h2>
-        <div class="space-y-6">
-            <div class="card">
-                <h3 class="text-xl font-bold accent">Project Alpha</h3>
-                <p class="text-sm text-slate-400 mb-2">Automation • AI • Python</p>
-                <p>I built this to solve [Problem]. It features local-first data processing and [Cool Feature].</p>
-            </div>
+    <section class="mb-20">
+        <h2 class="text-xl font-bold mb-8 uppercase tracking-widest text-slate-500">Active Research</h2>
+        <div class="card p-6">
+            <h3 class="text-lg font-bold accent mb-1">mnethi-intelligence</h3>
+            <p class="text-xs text-slate-500 mb-4">AI • Automation • Self-Hosting</p>
+            <p class="text-sm mb-4">
+                Inspired by the "de-Google" movement, I am currently architecting a personal AI ecosystem that runs on local infrastructure, ensuring data sovereignty without sacrificing intelligence.
+            </p>
+            <a href="#" class="text-xs font-bold border border-slate-700 px-3 py-1 rounded hover:bg-slate-800">VIEW PROJECT</a>
         </div>
     </section>
 
-    <footer class="mt-20 pt-8 border-t border-slate-800 text-sm text-slate-500">
-        <p>Copyright © YourName.NET, LLC. | Powered by Clean Code.</p>
-        <p class="mt-2 text-xs">Public Key: [Your Key ID]</p>
+    <footer class="pt-8 border-t border-slate-800 text-xs text-slate-500">
+        <div class="flex justify-between items-center mb-4">
+            <p>© 2026 Mukesh Nethi | mnethi.com</p>
+            <p class="accent">Powered by Strategy</p>
+        </div>
+        <p>Public Key: <span class="text-slate-400 font-mono">63C7-EAC6-B3BF-88B1</span></p>
     </footer>
 
 </body>
