@@ -1,95 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mnethi.com | Mukesh Nethi - Systems & Strategy</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mnethi.com | Mukesh Nethi - AI Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
-        body { 
-            background-color: #0a0f1a; 
-            color: #d1d5db; 
-            font-family: 'JetBrains Mono', 'Courier New', monospace; 
-        }
+        body { background: #0a0f1a; color: #d1d5db; font-family: 'JetBrains Mono', monospace; }
         .accent { color: #5fb9ff; }
-        .card { 
-            background: #111827; 
-            border: 1px solid #1f2937; 
-            border-radius: 4px; 
-            transition: all 0.3s ease;
-        }
-        .card:hover { border-color: #5fb9ff; }
-        hr { border-color: #1f2937; }
-        a:hover { text-decoration: underline; color: #fff; }
+        .nav-link:hover { color: #fff; text-decoration: underline; }
+        .hero-border { border-left: 2px solid #1e293b; padding-left: 1.5rem; }
     </style>
 </head>
-<body class="max-w-3xl mx-auto p-8 md:p-16 leading-relaxed">
-
-    <header class="mb-16">
-        <h1 class="text-3xl font-bold mb-4">Welcome to <span class="accent">mnethi.com</span></h1>
-        <nav class="flex gap-4 text-sm font-bold accent">
-            <a href="#story">Story</a> • 
-            <a href="https://github.com/mnethi33" target="_blank">Github</a> • 
-            <a href="https://linkedin.com/in/mukesh-nethi" target="_blank">LinkedIn</a> • 
-            <a href="mailto:nmukeshoff@gmail.com">Contact</a>
+<body class="max-w-4xl mx-auto p-8 md:p-16">
+    <header class="mb-20">
+        <h1 class="text-4xl font-bold mb-4">Mukesh <span class="accent">Nethi</span></h1>
+        <nav class="flex gap-6 text-sm font-bold uppercase tracking-widest">
+            <a href="story.html" class="nav-link">Story</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
         </nav>
     </header>
 
-    <section id="story" class="mb-16">
-        <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-slate-500">Greetings!</h2>
-        <p class="mb-4">
-            My name is <strong class="text-white">Mukesh Nethi</strong>. 
-        </p>
-        <p class="mb-6">
-            In my heritage, the name <em>Nethi</em> stems from the Sanskrit word <em>Niti</em>—meaning strategy, conduct, and intention. I carry this philosophy into my work as a software engineer. To me, code is not just syntax; it is a strategic architecture designed with clear intention.
-        </p>
-        <p class="italic text-slate-400 border-l-2 border-sky-900 pl-4">
-            "I build systems that bridge the gap between complex infrastructure and human-centric automation."
-        </p>
-    </section>
-
-    <section class="mb-16">
-        <h2 class="text-xl font-bold mb-8 uppercase tracking-widest text-slate-500">The Stack</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-            <div>
-                <h3 class="accent font-bold mb-2">Development</h3>
-                <p class="text-sm">Python, JavaScript, TypeScript, Node.js</p>
-            </div>
-            <div>
-                <h3 class="accent font-bold mb-2">Operations</h3>
-                <p class="text-sm">Linux (Debian), Docker, CloudOps, Git</p>
-            </div>
-            <div>
-                <h3 class="accent font-bold mb-2">Systems</h3>
-                <p class="text-sm">Automation Pipelines, Intelligent Systems, API Design</p>
-            </div>
-            <div>
-                <h3 class="accent font-bold mb-2">Philosophy</h3>
-                <p class="text-sm">Local-First, Privacy-Focused, Strategic Design</p>
-            </div>
-        </div>
-    </section>
-
     <section class="mb-20">
-        <h2 class="text-xl font-bold mb-8 uppercase tracking-widest text-slate-500">Active Research</h2>
-        <div class="card p-6">
-            <h3 class="text-lg font-bold accent mb-1">mnethi-intelligence</h3>
-            <p class="text-xs text-slate-500 mb-4">AI • Automation • Self-Hosting</p>
-            <p class="text-sm mb-4">
-                Inspired by the "de-Google" movement, I am currently architecting a personal AI ecosystem that runs on local infrastructure, ensuring data sovereignty without sacrificing intelligence.
+        <div class="hero-border">
+            <p class="text-xl leading-relaxed mb-6">
+                I am a <strong class="text-white">Senior AI Architect</strong> dedicated to building intentional digital ecosystems. From architecting organization-wide AI platforms at <span class="accent">OneMain Financial</span> to enabling agentic autonomy at <span class="accent">CVS</span>, my work bridges the gap between raw infrastructure and strategic intelligence.
             </p>
-            <a href="#" class="text-xs font-bold border border-slate-700 px-3 py-1 rounded hover:bg-slate-800">VIEW PROJECT</a>
+            <p class="text-slate-500 italic">"Strategy is not an accident; it is the manifestation of Niti."</p>
         </div>
     </section>
 
-    <footer class="pt-8 border-t border-slate-800 text-xs text-slate-500">
-        <div class="flex justify-between items-center mb-4">
-            <p>© 2026 Mukesh Nethi | mnethi.com</p>
-            <p class="accent">Powered by Strategy</p>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+        <div>
+            <h2 class="text-xs uppercase tracking-tighter text-slate-500 mb-4 font-bold">Latest Research</h2>
+            <h3 class="text-lg font-bold mb-2">The Multi-Agent MCP Bridge</h3>
+            <p class="text-sm text-slate-400 mb-4 text-justify">Architecting a standardized protocol for agents to securely interact with clinical and financial data across GCP and AWS.</p>
+            <a href="blog.html" class="accent text-xs font-bold underline">READ POST →</a>
         </div>
-        <p>Public Key: <span class="text-slate-400 font-mono">63C7-EAC6-B3BF-88B1</span></p>
-    </footer>
+        <div>
+            <h2 class="text-xs uppercase tracking-tighter text-slate-500 mb-4 font-bold">Active Lab</h2>
+            <h3 class="text-lg font-bold mb-2">Project Niti-Core</h3>
+            <p class="text-sm text-slate-400 mb-4 text-justify">A local-first, privacy-sovereign LLM hub designed to automate personal workflows without data leakage.</p>
+            <a href="projects.html" class="accent text-xs font-bold underline">EXPLORE DOC →</a>
+        </div>
+    </section>
 
+    <footer class="pt-8 border-t border-slate-900 text-[10px] text-slate-600 flex justify-between">
+        <p>© 2026 MUKESH NETHI | MNETHI.COM</p>
+        <p class="uppercase tracking-widest">Powered by HTML & Intention</p>
+    </footer>
 </body>
 </html>
