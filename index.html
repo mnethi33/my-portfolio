@@ -9,12 +9,17 @@
         body { background: #05070a; color: #8fa1b3; font-family: 'JetBrains Mono', monospace; }
         .accent { color: #61afef; }
         .nav-link:hover { color: #fff; border-bottom: 1px solid #61afef; }
+        .card { border: 1px solid #111827; transition: border-color 0.2s; }
+        .card:hover { border-color: #1e3a5f; }
+        .tag { background: #0d1117; border: 1px solid #1e2a38; color: #61afef; font-size: 9px; padding: 2px 8px; display: inline-block; }
+        .status-active { color: #98c379; }
+        .status-research { color: #e5c07b; }
     </style>
 </head>
 <body class="max-w-3xl mx-auto p-8 md:p-20 leading-relaxed">
     <header class="mb-24">
         <h1 class="text-xl font-bold mb-6 text-white tracking-tighter">MUKESH <span class="accent">NETHI</span></h1>
-        <nav class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em]">
+        <nav class="flex flex-wrap gap-8 text-[10px] font-bold uppercase tracking-[0.2em]">
             <a href="story.html" class="nav-link">The Journey</a>
             <a href="projects.html" class="nav-link">The Lab</a>
             <a href="blog.html" class="nav-link">The Log</a>
@@ -23,33 +28,154 @@
     </header>
 
     <main>
+
+        <!-- Hero -->
         <section class="mb-20">
             <p class="text-lg text-white mb-6">Senior AI Architect specializing in <span class="accent">Sovereign Systems</span> and <span class="accent">Agentic Orchestration</span>.</p>
-            <p class="mb-8 text-justify">
-                With 5 years of focused experience across Computer Vision, CloudOps, and Generative AI, I architect model-agnostic platforms that transform raw data into actionable intelligence. My work centers on Model Context Protocol (MCP), high-concurrency RAG engines, and automated AI governance.
+            <p class="mb-4 text-justify">
+                With 5 years of focused experience across Computer Vision, CloudOps, and Generative AI, I architect model-agnostic platforms that transform raw data into actionable intelligence.
+            </p>
+            <p class="text-justify">
+                My work centers on <span class="accent">Model Context Protocol (MCP)</span>, high-concurrency RAG engines, and automated AI governance — building systems that operate reliably at enterprise scale without vendor lock-in.
             </p>
         </section>
 
-        [Image of a high-level enterprise AI platform architecture]
+        <!-- Architecture Diagram -->
+        <section class="mb-20">
+            <h2 class="text-slate-600 text-[10px] uppercase tracking-widest font-bold mb-6">Platform Architecture</h2>
+            <pre class="text-[10px] leading-5 text-slate-500 border border-slate-900 p-6 overflow-x-auto">
+┌──────────────────────────────────────────────────────────────┐
+│                   ENTERPRISE AI PLATFORM                     │
+├─────────────────┬────────────────────┬───────────────────────┤
+│   DATA LAYER    │   ORCHESTRATION    │   GOVERNANCE & OPS    │
+│                 │                    │                       │
+│  ┌───────────┐  │  ┌──────────────┐  │  ┌─────────────────┐ │
+│  │ RAG Engine│──┼─▶│  MCP Server  │  │  │  Hallucination  │ │
+│  │ (Hybrid)  │  │  │  (Router)    │  │  │    Tracker      │ │
+│  └───────────┘  │  └──────┬───────┘  │  └─────────────────┘ │
+│                 │         │          │                       │
+│  ┌───────────┐  │  ┌──────▼───────┐  │  ┌─────────────────┐ │
+│  │  Vector   │  │  │ Agent Fleet  │  │  │ Model-Agnostic  │ │
+│  │   Store   │  │  │ (Autonomous) │  │  │   Eval Suite    │ │
+│  └───────────┘  │  └──────┬───────┘  │  └─────────────────┘ │
+│                 │         │          │                       │
+│  ┌───────────┐  │  ┌──────▼───────┐  │  ┌─────────────────┐ │
+│  │ Data Mesh │  │  │  Tool Registry│  │  │  Cost & Latency │ │
+│  │ Connectors│  │  │  + Memory    │  │  │   SLO Monitor   │ │
+│  └───────────┘  │  └──────────────┘  │  └─────────────────┘ │
+└─────────────────┴────────────────────┴───────────────────────┘</pre>
+        </section>
 
-        <section class="mb-24">
+        <!-- Core Stack -->
+        <section class="mb-20">
+            <h2 class="text-slate-600 text-[10px] uppercase tracking-widest font-bold mb-6">Core Stack</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="tag">Python</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">LlamaIndex</span>
+                <span class="tag">MCP</span>
+                <span class="tag">OpenAI API</span>
+                <span class="tag">Anthropic API</span>
+                <span class="tag">pgvector</span>
+                <span class="tag">Weaviate</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">AWS</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">YOLO</span>
+                <span class="tag">Terraform</span>
+            </div>
+        </section>
+
+        <!-- Current Focus -->
+        <section class="mb-20">
             <h2 class="text-slate-600 text-[10px] uppercase tracking-widest font-bold mb-6">Current Focus</h2>
             <div class="grid gap-6">
-                <div class="border border-slate-900 p-6 hover:border-sky-900 transition-colors">
-                    <h3 class="text-white font-bold mb-2">Multi-Agent Protocol Standards</h3>
-                    <p class="text-xs">Standardizing tool-use and memory persistence across autonomous agent fleets using MCP.</p>
+                <div class="card p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-white font-bold">Multi-Agent Protocol Standards</h3>
+                        <span class="text-[9px] status-active uppercase tracking-widest">● Active</span>
+                    </div>
+                    <p class="text-xs mb-4">Standardizing tool-use and memory persistence across autonomous agent fleets using MCP. Building reusable server templates that decouple capability from model provider, enabling drop-in model swaps without re-engineering downstream agents.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">MCP</span>
+                        <span class="tag">Multi-Agent</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Tool Registry</span>
+                    </div>
                 </div>
-                <div class="border border-slate-900 p-6 hover:border-sky-900 transition-colors">
-                    <h3 class="text-white font-bold mb-2">Enterprise RAG Frameworks</h3>
-                    <p class="text-xs">Architecting high-performance vector retrieval systems with automated hallucination tracking and semantic chunking.</p>
+
+                <div class="card p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-white font-bold">Enterprise RAG Frameworks</h3>
+                        <span class="text-[9px] status-active uppercase tracking-widest">● Active</span>
+                    </div>
+                    <p class="text-xs mb-4">Architecting high-performance vector retrieval systems with automated hallucination tracking, semantic chunking, and hybrid BM25 + dense retrieval pipelines. Designed to serve thousands of concurrent queries with sub-200ms p99 latency at enterprise scale.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">RAG</span>
+                        <span class="tag">pgvector</span>
+                        <span class="tag">LlamaIndex</span>
+                        <span class="tag">BM25</span>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-white font-bold">AI Governance & Eval Pipelines</h3>
+                        <span class="text-[9px] status-research uppercase tracking-widest">◎ Research</span>
+                    </div>
+                    <p class="text-xs mb-4">Designing automated evaluation frameworks for LLM outputs — covering factual accuracy, safety alignment, latency SLOs, and cost tradeoffs across model providers. Outputs feed a live dashboard for continuous model health monitoring.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Eval</span>
+                        <span class="tag">Governance</span>
+                        <span class="tag">MLOps</span>
+                        <span class="tag">Observability</span>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Selected Work -->
+        <section class="mb-20">
+            <div class="flex justify-between items-baseline mb-6">
+                <h2 class="text-slate-600 text-[10px] uppercase tracking-widest font-bold">Selected Work</h2>
+                <a href="projects.html" class="text-[9px] accent hover:underline uppercase tracking-widest">View All →</a>
+            </div>
+            <div class="grid gap-4">
+                <a href="projects.html" class="card p-5 flex justify-between items-center group">
+                    <div>
+                        <h3 class="text-white text-sm font-bold mb-1 group-hover:text-sky-300 transition-colors">Sovereign RAG Engine</h3>
+                        <p class="text-xs">On-prem RAG stack with zero cloud dependency, semantic routing, and real-time hallucination eval.</p>
+                    </div>
+                    <span class="text-[10px] accent ml-6 shrink-0">→</span>
+                </a>
+                <a href="projects.html" class="card p-5 flex justify-between items-center group">
+                    <div>
+                        <h3 class="text-white text-sm font-bold mb-1 group-hover:text-sky-300 transition-colors">MCP Orchestration Layer</h3>
+                        <p class="text-xs">Unified protocol layer routing 20+ specialized agents with shared memory and tool registry.</p>
+                    </div>
+                    <span class="text-[10px] accent ml-6 shrink-0">→</span>
+                </a>
+                <a href="projects.html" class="card p-5 flex justify-between items-center group">
+                    <div>
+                        <h3 class="text-white text-sm font-bold mb-1 group-hover:text-sky-300 transition-colors">CV Pipeline — Defect Detection</h3>
+                        <p class="text-xs">Real-time computer vision system for manufacturing QA using custom-trained YOLO models at 60fps.</p>
+                    </div>
+                    <span class="text-[10px] accent ml-6 shrink-0">→</span>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="pt-12 border-t border-slate-900 text-[9px] text-slate-600 flex justify-between">
+    <footer class="pt-12 border-t border-slate-900 text-[9px] text-slate-600 flex justify-between items-center flex-wrap gap-4">
         <p>© 2026 MUKESH NETHI</p>
-        <p class="accent">VERIFIED: 63C7-EAC6-B3BF-88B1</p>
+        <div class="flex gap-6 items-center">
+            <a href="mailto:nmukeshoff@gmail.com" class="hover:text-slate-400 transition-colors">nmukeshoff@gmail.com</a>
+            <span class="accent">VERIFIED: 63C7-EAC6-B3BF-88B1</span>
+        </div>
     </footer>
 </body>
 </html>
