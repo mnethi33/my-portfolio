@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mnethi.com | Mukesh Nethi - AI Architect</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mnethi.com | Mukesh Nethi - AI Systems Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
-        body { background: #070a13; color: #94a3b8; font-family: 'JetBrains Mono', monospace; }
-        .accent { color: #38bdf8; }
+        body { background-color: #080c14; color: #94a3b8; font-family: 'JetBrains Mono', monospace; }
+        .accent { color: #5fb9ff; }
         .white-text { color: #f1f5f9; }
-        .nav-link:hover { color: #38bdf8; }
-        .border-glow { border: 1px solid #1e293b; transition: border 0.3s; }
-        .border-glow:hover { border-color: #38bdf8; }
+        .nav-link:hover { color: #5fb9ff; text-decoration: underline; }
+        .card { background: #0f172a; border: 1px solid #1e293b; padding: 2rem; border-radius: 4px; transition: 0.3s; }
+        .card:hover { border-color: #5fb9ff; box-shadow: 0 0 15px rgba(95, 185, 255, 0.1); }
+        hr { border-color: #1e293b; }
     </style>
 </head>
-<body class="max-w-3xl mx-auto p-6 md:p-16">
+<body class="max-w-3xl mx-auto p-6 md:p-16 leading-relaxed">
 
     <header class="mb-20">
-        <h1 class="text-2xl font-bold mb-4 white-text">MUKESH <span class="accent">NETHI</span></h1>
-        <nav class="flex gap-6 text-[10px] uppercase tracking-[0.2em]">
+        <h1 class="text-2xl font-bold mb-4 white-text uppercase tracking-widest">MUKESH <span class="accent">NETHI</span></h1>
+        <nav class="flex gap-6 text-[10px] uppercase tracking-[0.3em] font-bold">
             <a href="story.html" class="nav-link">The Story</a>
             <a href="projects.html" class="nav-link">The Lab</a>
-            <a href="blog.html" class="nav-link">Log</a>
+            <a href="blog.html" class="nav-link">The Log</a>
             <a href="mailto:nmukeshoff@gmail.com" class="nav-link">Signal</a>
         </nav>
     </header>
 
     <section class="mb-16">
-        <h2 class="text-xs uppercase tracking-widest text-slate-600 mb-6">Core Philosophy</h2>
-        <p class="text-lg leading-relaxed mb-6 white-text">
-            I architect <span class="accent">intentional</span> digital ecosystems. 
+        <h2 class="text-[10px] uppercase tracking-widest text-slate-600 mb-6 font-bold">Protocol: Intention (Niti)</h2>
+        <p class="text-xl white-text mb-6">
+            I architect <span class="accent italic">intentional</span> digital ecosystems.
         </p>
-        <p class="mb-6">
-            My work is grounded in <strong>Niti</strong>—the principle of strategic conduct. I bridge the gap between complex cloud infrastructure and autonomous intelligence, specializing in model-agnostic AI platforms and multi-agent orchestration.
+        <p class="mb-6 text-justify">
+            Transitioning from the precision of **Computer Vision** to the complexity of **Enterprise AI Architecture**, my focus is the manifestation of **Niti**—strategic conduct. I bridge infrastructure, automation, and sovereign intelligence to build systems that scale with purpose.
         </p>
     </section>
 
+    <hr class="mb-16">
+
     <section class="mb-20">
-        <h2 class="text-xs uppercase tracking-widest text-slate-600 mb-6">Active Research</h2>
-        <div class="grid gap-4">
-            <div class="border-glow p-6 rounded">
-                <h3 class="white-text font-bold mb-2">Multi-Agent Protocol (MAP)</h3>
-                <p class="text-sm">Standardizing how autonomous agents securely interact with sensitive data layers via MCP.</p>
+        <h2 class="text-[10px] uppercase tracking-widest text-slate-600 mb-8 font-bold">Active Research & Lab Work</h2>
+        <div class="space-y-6">
+            <div class="card">
+                <h3 class="white-text font-bold mb-2">Multi-Agent Orchestration (MAO)</h3>
+                <p class="text-sm">Standardizing Model Context Protocol (MCP) bridges to enable autonomous agent reasoning across high-concurrency cloud and on-premise infrastructure.</p>
             </div>
-            <div class="border-glow p-6 rounded">
-                <h3 class="white-text font-bold mb-2">Sovereign Intelligence</h3>
-                <p class="text-sm">Researching local-first LLM orchestration to ensure 100% data privacy and system independence.</p>
+            
+            
+
+            <div class="card">
+                <h3 class="white-text font-bold mb-2">Sovereign Intelligent RAG</h3>
+                <p class="text-sm">Developing model-agnostic, zero-leakage Retrieval Augmented Generation frameworks for secure data processing in regulated environments.</p>
+            </div>
+
+            
+
+            <div class="card">
+                <h3 class="white-text font-bold mb-2">AI-Driven Infrastructure (AIaC)</h3>
+                <p class="text-sm">Researching self-healing CI/CD pipelines and automated AI governance layers to monitor system behavior and hallucination metrics in real-time.</p>
             </div>
         </div>
     </section>
 
-    <footer class="pt-8 border-t border-slate-900 text-[9px] uppercase tracking-widest flex justify-between">
-        <p>© 2026 MN | MNETHI.COM</p>
-        <p>Public Key: <span class="accent">63C7-EAC6-B3BF-88B1</span></p>
+    <footer class="pt-12 border-t border-slate-900 text-[9px] uppercase tracking-[0.2em] text-slate-600">
+        <div class="flex justify-between items-center mb-4">
+            <p>© 2026 MUKESH NETHI | MNETHI.COM</p>
+            <p class="accent">POWERED BY STRATEGY</p>
+        </div>
+        <div class="flex gap-4">
+            <p>Public Key: <span class="white-text">63C7-EAC6-B3BF-88B1</span></p>
+        </div>
     </footer>
 
 </body>
